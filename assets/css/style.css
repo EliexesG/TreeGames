@@ -1,0 +1,71 @@
+
+:root {
+    --verde_agua_medio: #155e63;
+    --blanco_1: #f9f8eb;
+    --verde_agua_claro: #1e868d;
+    --verde_agua_oscuro: #0c3639;
+    --blanco_2: #ffffff;
+    --blanco_hueso: #edeac4;
+    --gris_oscuro: #555555;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--gris_oscuro);
+}
+
+body .container {
+    background-color: var(--blanco_2);
+}
+
+header .navbar, header .dropdown-menu {
+    background: var(--blanco_1) url(../img/background_pattern.png) repeat-x;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+#logoNavBar, #controlNavBar, #logoFooter {
+    height: 75px;
+    width: auto;
+}
+
+#opcionesNav {
+    position: relative;
+    margin: auto auto;
+}
+
+#opcionesNav li a {
+    color: var(--gris_oscuro);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#opcionesNav li a:hover {
+    color: var(--verde_agua_claro);
+    margin-top: -5px;
+    transition: .2s;
+}
+
+main .main {
+    height: 1500px;
+}
+
+#pageFooter {
+    background: var(--blanco_1) url(../img/background_pattern.png) repeat-x;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: -1px -8px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+#pageFooter ul li a {
+    color: var(--gris_oscuro);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pageFooter ul li a:hover {
+    color: var(--verde_agua_claro);
+    margin-top: -15px;
+    transition: .2s;
+}

@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!--Icons-->
-  <link rel="icon" href="assets/img/logoWhiteVer.png">
+  <link rel="icon" href="assets/img/logo_version_blanca.png">
 
   <!--Styles-->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -24,14 +24,71 @@
 
 <body>
     
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
+  <div class="container">
 
-  </main>
-  <footer>
-    <!-- place footer here -->
+    <header>
+      <div class>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" id="logoNavBar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="opcionesNav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Servicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Historia</a></li>
+                    <li><a class="dropdown-item" href="#">Acerca del Sitio</a></li>
+                    <li><a class="dropdown-item" href="#">Localización</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand" href="#"><img src="assets/img/control.png" alt="control" id="controlNavBar"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main"></div>
+    </main>
+
+  </div>
+
+  <footer id="pageFooter" class="d-flex flex-wrap justify-content-lg-between align-items-center py-4 border-top container-fluid">
+    <div class="col-lg-2 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="assets/img/logo_version_blanca.png" alt="logoFooter" id="logoFooter" class="bi">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 TreeGames, S.A.</span>
+    </div>
+
+    <ul class="nav col-lg-8 justify-content-lg-center list-unstyled d-flex my-4">
+      <li class="ms-3"><a class="text-decoration-none" href="#">Home</a></li>
+      <li class="ms-3"><a class="text-decoration-none" href="#">Contacto</a></li>
+      <li class="ms-3"><a class="text-decoration-none" href="#">Servicio</a></li>
+      <li class="ms-3"><a class="text-decoration-none" href="#">Contacto</a></li>
+    </ul>
+
+    <ul class="nav col-lg-2 justify-content-lg-end list-unstyled d-flex my-4">
+      <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30" src="assets/img/facebook_icon.png" alt="facebook"></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30" src="assets/img/instagram_logo.png" alt="instagram"></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30" src="assets/img/whatsapp_icon.png" alt="whatsapp"></a></li>
+    </ul>
   </footer>
 
   <!-- Bootstrap JavaScript Libraries -->
