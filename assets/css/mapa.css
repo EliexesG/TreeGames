@@ -1,0 +1,16 @@
+:root {
+    --verde_agua_medio: #155e63;
+    --blanco_1: #f9f8eb;
+    --verde_agua_claro: #1e868d;
+    --verde_agua_oscuro: #0c3639;
+    --blanco_2: #ffffff;
+    --blanco_hueso: #edeac4;
+    --gris_oscuro: #555555;
+}
+
+#mapa {
+    height: 500px;
+    width: 100%;
+    border: solid var(--verde_agua_medio);
+    border-radius: 15px;
+}
