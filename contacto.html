@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>TreeGames Contacto</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!--Icons-->
+  <link rel="icon" href="assets/img/logo_version_blanca.png">
+
+  <!--Styles-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contacto.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" id="logoNavBar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="opcionesNav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Servicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Historia</a></li>
+                    <li><a class="dropdown-item" href="#">Acerca del Sitio</a></li>
+                    <li><a class="dropdown-item" href="localizacion.html">Localización</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand" href="#"><img src="assets/img/control.png" alt="control" id="controlNavBar"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main">
+
+        <h1 class="text-center mb-4">¡Ponte en Contacto con nosotros!</h1>
+
+        <p>Si quieres conocer más sobre nosotros, nuestros <span>"VIDEO JUEGOS"</span> o incluso crear uno nuevo desde
+          0, contacta con
+          nosotros en nuestras diferentes redes sociales, nuestro correo o número de teléfono.
+        </p>
+
+        <hr class="table-group-divider">
+
+        <h2>Contactos:</h2>
+
+        <div class="row mt-5 mb-5 d-flex justify-content-center">
+          <article class="col-lg-4 articulo">
+            <h5>Correo Electronico:</h5>
+            <p>ejemplo@gmail.com</p>
+          </article>
+          <article class="col-lg-4 articulo">
+            <h5>Número de Teléfono:</h5>
+            <p>(+506) 5555-5555</p>
+          </article>
+        </div>
+
+        <hr class="table-group-divider">
+
+        <h2 class="mb-4">Formulario</h2>
+
+        <p>Llena este formulario para tener un contacto más directo con nosotros.</p>
+
+        <div id="formulario" class="row articulo">
+          <form class="col-lg-6">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha</label>
+              <input type="date" class="form-control" id="fecha">
+              <p id="edad" hidden></p>
+            </div>
+            <div class="mb-3">
+              <label for="rango" class="form-label">Ingreso</label>
+              <input min="0" max="1000000"  type="range" class="form-control" id="rango" aria-describedby="rangoHelp" oninput="this.nextElementSibling.value = this.value">
+              <output id="rango" class="text-center w-100 mt-3">500000</output>
+              <div id="rangoHelp" class="form-text">Si tu consulta no es un proyecto puedes dejarlo en 0</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Genero</label>
+              <div id="generos" class="btn-group d-flex justify-content-center">
+                <div class="form-check me-2">
+                  <input type="radio" class="form-check-input" id="masculino" name="optradio" value="option1">
+                  <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="femenino" name="optradio" value="option2">
+                  <label class="form-check-label" for="femenino">Femenino</label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Grado Académino</label>
+              <div id="gradoAcademino" class="d-flex flex-column">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="bachillerato" name="option1" value="something">
+                  <label class="form-check-label" for="bachillerato">Bachillerato</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="tecnico" name="option1" value="something">
+                  <label class="form-check-label" for="tecnico">Técnico</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="diplomado" name="option1" value="something">
+                  <label class="form-check-label" for="diplomado">Doplomado</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="bachilleratoU" name="option1" value="something">
+                  <label class="form-check-label" for="bachilleratoU">Bachillerato Universitario</label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+              <button type="button" class="btn">Contactar</button>
+            </div>
+          </form>
+          <div class="col-lg-6 patron">
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer id="pageFooter"
+    class="d-flex flex-wrap justify-content-lg-between align-items-center py-4 border-top container-fluid">
+    <div class="col-lg-2 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="assets/img/logo.png" alt="logoFooter" id="logoFooter" class="bi">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 TreeGames, S.A.</span>
+    </div>
+
+    <ul class="nav col-lg-8 justify-content-lg-center list-unstyled d-flex my-4">
+      <li class="ms-3"><a class="text-decoration-none" href="index.html">Home</a></li>
+      <li class="ms-3"><a class="text-decoration-none" href="contacto.html">Contacto</a></li>
+      <li class="ms-3"><a class="text-decoration-none" href="#">Servicio</a></li>
+    </ul>
+
+    <ul class="nav col-lg-2 justify-content-lg-end list-unstyled d-flex my-4">
+      <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30"
+            src="assets/img/facebook_icon.png" alt="facebook"></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30"
+            src="assets/img/instagram_logo.png" alt="instagram"></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30"
+            src="assets/img/whatsapp_icon.png" alt="whatsapp"></a></li>
+    </ul>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script src="assets/js/contacto.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,3 @@
-
 :root {
     --verde_agua_medio: #155e63;
     --blanco_1: #f9f8eb;
@@ -14,11 +13,22 @@ body {
     color: var(--gris_oscuro);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--verde_agua_medio);
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 15px;
+}
+
+span {
+    color: var(--verde_agua_claro);
+    font-weight: bold;
+    font-style: oblique;
 }
 
 button {
@@ -41,14 +51,17 @@ body .container {
     background-color: var(--blanco_2);
 }
 
-header .navbar, header .dropdown-menu {
+header .navbar,
+header .dropdown-menu {
     background: var(--blanco_1) url(../img/background_pattern.png) repeat-x;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.40);
 }
 
-#logoNavBar, #controlNavBar, #logoFooter {
+#logoNavBar,
+#controlNavBar,
+#logoFooter {
     height: 75px;
     width: auto;
 }
@@ -92,4 +105,18 @@ header .navbar, header .dropdown-menu {
 main .main {
     margin-top: 126px;
     margin-bottom: 50px;
+}
+
+.articulo {
+    padding: 40px;
+    background-color: var(--blanco_1);
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+.patron {
+    background-color: var(--blanco_1);
+    opacity: 0.8;
+    background: repeating-linear-gradient(-45deg, var(--verde_agua_medio), var(--verde_agua_medio) 5px, var(--blanco_1) 5px, var(--blanco_1) 25px);
 }

@@ -1,10 +1,10 @@
 let map;
 let marker;
-const miLatLong = {lat:10.00807, lng:-84.21655};
+const miLatLong = { lat: 10.00807, lng: -84.21655 };
 var directionsService = null;
 var directionsRenderer = null;
 
-function initMap(){
+function initMap() {
 
     try {
 
@@ -33,27 +33,27 @@ function getActualLocation() {
 
     try {
 
-        if(navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position, ac){
-                
-                let lat = position.coords.latitude;
-                let lng = position.coords.longitude; 
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position, ac) {
 
-                drawRoute({lat: lat, lng: lng});
+                let lat = position.coords.latitude;
+                let lng = position.coords.longitude;
+
+                drawRoute({ lat: lat, lng: lng });
             });
         }
-        else{
+        else {
             alert("El navegador no soporta la geolocalización");
         }
-        
+
     } catch (error) {
         console.log(error);
     }
 }
 
-function drawRoute(coords){
+function drawRoute(coords) {
     try {
-        
+
         var start = coords;
         var end = miLatLong;
 
@@ -63,8 +63,8 @@ function drawRoute(coords){
             travelMode: 'DRIVING'
         };
 
-        directionsService.route(request, function(result, status){
-            if(status == 'OK'){
+        directionsService.route(request, function (result, status) {
+            if (status == 'OK') {
                 directionsRenderer.setDirections(result);
             }
         });
@@ -74,5 +74,5 @@ function drawRoute(coords){
     }
 }
 
-document.getElementById("trazarRuta").addEventListener('click', function(){getActualLocation()});
+document.getElementById("trazarRuta").addEventListener('click', function () { getActualLocation() });
 
