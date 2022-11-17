@@ -1,11 +1,9 @@
 let birthDateDom = document.getElementById("fecha");
 
-console.log(birthDateDom)
-
-birthDateDom.addEventListener('change', function(evt) {
+birthDateDom.addEventListener('change', function (evt) {
     let birthDate = this.value;
-    CalculateAge(birthDate)
-;});
+    CalculateAge(birthDate);
+});
 
 function CalculateAge(birthDateString) {
 

@@ -14,8 +14,8 @@
   <link rel="icon" href="assets/img/logo_version_blanca.png">
 
   <!--Styles-->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/contacto.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/contacto.css">
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,7 +31,7 @@
       <div class>
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo" id="logoNavBar"></a>
+            <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="logo" id="logoNavBar"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="opcionesNav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
@@ -61,7 +61,7 @@
                 </li>
               </ul>
             </div>
-            <a class="navbar-brand" href="#"><img src="assets/img/control.png" alt="control" id="controlNavBar"></a>
+            <a class="navbar-brand" href="#"><img src="../assets/img/control.png" alt="control" id="controlNavBar"></a>
           </div>
         </nav>
       </div>
@@ -72,7 +72,7 @@
 
         <h1 class="text-center mb-4">¡Ponte en Contacto con nosotros!</h1>
 
-        <p>Si quieres conocer más sobre nosotros, nuestros <span>"VIDEO JUEGOS"</span> o incluso crear uno nuevo desde
+        <p>Si quieres conocer más sobre nosotros, nuestros <span>"VIDEO JUEGOS"</span> o incluso crear uno <span>"NUEVO"</span> desde
           0, contacta con
           nosotros en nuestras diferentes redes sociales, nuestro correo o número de teléfono.
         </p>
@@ -98,8 +98,8 @@
 
         <p>Llena este formulario para tener un contacto más directo con nosotros.</p>
 
-        <div id="formulario" class="row articulo">
-          <form class="col-lg-6">
+        <div class="row articulo">
+          <form onsubmit="" class="col-lg-6" id="formulario">
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
@@ -155,7 +155,7 @@
               </div>
             </div>
             <div class="mb-3 d-flex justify-content-center">
-              <button type="button" class="btn">Contactar</button>
+              <input id="submit" type="submit" value="Contactar" class="btn"></input>
             </div>
           </form>
           <div class="col-lg-6 patron">
@@ -177,18 +177,18 @@
     </div>
 
     <ul class="nav col-lg-8 justify-content-lg-center list-unstyled d-flex my-4">
-      <li class="ms-3"><a class="text-decoration-none" href="index.html">Home</a></li>
+      <li class="ms-3"><a class="text-decoration-none" href="../index.html">Home</a></li>
       <li class="ms-3"><a class="text-decoration-none" href="contacto.html">Contacto</a></li>
       <li class="ms-3"><a class="text-decoration-none" href="#">Servicio</a></li>
     </ul>
 
     <ul class="nav col-lg-2 justify-content-lg-end list-unstyled d-flex my-4">
       <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30"
-            src="assets/img/facebook_icon.png" alt="facebook"></a></li>
+            src="../assets/img/facebook_icon.png" alt="facebook"></a></li>
       <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30"
-            src="assets/img/instagram_logo.png" alt="instagram"></a></li>
+            src="../assets/img/instagram_logo.png" alt="instagram"></a></li>
       <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="30" height="30"
-            src="assets/img/whatsapp_icon.png" alt="whatsapp"></a></li>
+            src="../assets/img/whatsapp_icon.png" alt="whatsapp"></a></li>
     </ul>
   </footer>
 
@@ -201,7 +201,15 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
 
-  <script src="assets/js/contacto.js"></script>
+  <!-- JQuery Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <!-- -->
+  
+  <!-- Local Script -->
+  <script src="../assets/js/edad.js"></script>
+  <script src="../assets/js/validacion.js"></script>
 </body>
 
 </html>
