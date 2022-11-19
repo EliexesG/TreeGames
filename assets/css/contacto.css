@@ -14,19 +14,3 @@
     padding: 15px;
     border-radius: 15px !important;
 }
-
-#submit {
-    background-color: var(--verde_agua_claro) !important;
-    color: var(--blanco_1) !important;
-    border: none !important;
-    padding: 10px 15px !important;
-    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.40);
-}
-
-#submit:hover {
-    background-color: var(--verde_agua_oscuro) !important;
-}
-
-#submit:active {
-    transform: translateY(4px);
-}

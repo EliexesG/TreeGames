@@ -1,28 +1,28 @@
 // Validaciones
 $("#formulario").validate({
 
-    rules:{
-        email:{
+    rules: {
+        email: {
             email: true
         },
-        nombre:{
+        nombre: {
             minlength: 2
         },
-        fecha:{
-            fecha:true
+        fecha: {
+            fecha: true
         }
     },
     messages: {
-        email:"Por favor, ingresa tu email",
-        nombre:{
+        email: "Por favor, ingresa tu email",
+        nombre: {
             required: "Por favor, ingresa tu nombre",
             minlength: "Debe haber un minimo de 2 caracteres"
         },
-        fecha:"Ingresa una fecha de nacimiento",
+        fecha: "Ingresa una fecha de nacimiento",
 
     },
 
-    submitHandler: function(form) {
-      form.submit();
+    submitHandler: function (form) {
+        form.submit();
     }
-   }); 
+}); 

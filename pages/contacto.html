@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!--Icons-->
-  <link rel="icon" href="assets/img/logo_version_blanca.png">
+  <link rel="icon" href="../assets/img/logo_version_blanca.png">
 
   <!--Styles-->
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -99,24 +99,24 @@
         <p>Llena este formulario para tener un contacto más directo con nosotros.</p>
 
         <div class="row articulo">
-          <form onsubmit="" class="col-lg-6" id="formulario">
+          <form class="col-lg-6" id="formulario">
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más.</div>
             </div>
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
+              <input name="nombre" type="text" class="form-control" id="nombre">
             </div>
             <div class="mb-3">
               <label for="fecha" class="form-label">Fecha</label>
-              <input type="date" class="form-control" id="fecha">
+              <input name="fecha" type="date" class="form-control" id="fecha">
               <p id="edad" hidden></p>
             </div>
             <div class="mb-3">
               <label for="rango" class="form-label">Ingreso</label>
-              <input min="0" max="1000000"  type="range" class="form-control" id="rango" aria-describedby="rangoHelp" oninput="this.nextElementSibling.value = this.value">
+              <input name="rango" min="0" max="1000000"  type="range" class="form-control" id="rango" aria-describedby="rangoHelp" oninput="this.nextElementSibling.value = this.value">
               <output id="rango" class="text-center w-100 mt-3">500000</output>
               <div id="rangoHelp" class="form-text">Si tu consulta no es un proyecto puedes dejarlo en 0</div>
             </div>
@@ -124,38 +124,42 @@
               <label class="form-label">Genero</label>
               <div id="generos" class="btn-group d-flex justify-content-center">
                 <div class="form-check me-2">
-                  <input type="radio" class="form-check-input" id="masculino" name="optradio" value="option1">
+                  <input name="genero" type="radio" class="form-check-input" id="masculino" value="Masculino">
                   <label class="form-check-label" for="masculino">Masculino</label>
                 </div>
                 <div class="form-check">
-                  <input type="radio" class="form-check-input" id="femenino" name="optradio" value="option2">
+                  <input name="genero" type="radio" class="form-check-input" id="femenino" value="Femenino">
                   <label class="form-check-label" for="femenino">Femenino</label>
                 </div>
               </div>
             </div>
             <div class="mb-3">
               <label class="form-label">Grado Académino</label>
-              <div id="gradoAcademino" class="d-flex flex-column">
+              <div name="gradoAcademico" id="gradoAcademino" class="d-flex flex-column">
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="bachillerato" name="option1" value="something">
+                  <input type="checkbox" class="form-check-input opcionCheck" id="bachillerato" name="checkbox" value="Bachillerato">
                   <label class="form-check-label" for="bachillerato">Bachillerato</label>
                 </div>
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="tecnico" name="option1" value="something">
+                  <input type="checkbox" class="form-check-input opcionCheck" id="tecnico" name="checkbox" value="Tecnico">
                   <label class="form-check-label" for="tecnico">Técnico</label>
                 </div>
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="diplomado" name="option1" value="something">
-                  <label class="form-check-label" for="diplomado">Doplomado</label>
+                  <input type="checkbox" class="form-check-input opcionCheck" id="diplomado" name="checkbox" value="Diplomado">
+                  <label class="form-check-label" for="diplomado">Diplomado</label>
                 </div>
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="bachilleratoU" name="option1" value="something">
+                  <input type="checkbox" class="form-check-input opcionCheck" id="bachilleratoU" name="checkbox" value="Bachillerato Universitario">
                   <label class="form-check-label" for="bachilleratoU">Bachillerato Universitario</label>
                 </div>
               </div>
             </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
+            </div>
             <div class="mb-3 d-flex justify-content-center">
-              <input id="submit" type="submit" value="Contactar" class="btn"></input>
+              <button type="submit" id="contactar" class="btn">Contactar</button>
             </div>
           </form>
           <div class="col-lg-6 patron">
@@ -171,7 +175,7 @@
     class="d-flex flex-wrap justify-content-lg-between align-items-center py-4 border-top container-fluid">
     <div class="col-lg-2 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <img src="assets/img/logo.png" alt="logoFooter" id="logoFooter" class="bi">
+        <img src="../assets/img/logo.png" alt="logoFooter" id="logoFooter" class="bi">
       </a>
       <span class="mb-3 mb-md-0 text-muted">© 2022 TreeGames, S.A.</span>
     </div>
@@ -205,11 +209,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
-    <!-- -->
+  <!-- stpm Libraries -->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   
   <!-- Local Script -->
   <script src="../assets/js/edad.js"></script>
   <script src="../assets/js/validacion.js"></script>
+  <script src="../assets/js/sendEmail.js"></script>
 </body>
 
 </html>
