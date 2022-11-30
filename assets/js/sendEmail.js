@@ -26,8 +26,8 @@ $("#formulario").validate({
 });
 
 document.getElementById("contactar").addEventListener('click', async () => {
-    
-    if($("#formulario").valid() == false){
+
+    if ($("#formulario").valid() == false) {
         return;
     }
 
@@ -108,10 +108,10 @@ async function sendEmail() {
         Port: "2525"
     }).then(
         message => {
-            if(message == 'OK') {
+            if (message == 'OK') {
                 alert("Mensaje Enviado");
             }
-            else{
+            else {
                 alert("Error al Enviar Mensaje");
             }
         }
