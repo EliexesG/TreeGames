@@ -124,3 +124,7 @@ main .main {
 .light { 
     color: var(--blanco_1);
 }
+
+video {
+    border-radius: 15px;
+}

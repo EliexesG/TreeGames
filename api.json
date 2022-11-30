@@ -24,5 +24,31 @@
             "descripcion": "Un niño convertido en una biscosa masa tiene que buscar al mago que lo convirtió, para así liberar el hechizo",
             "fechaSalida": "Aún no disponible"
         }
+    ],
+    "integrantes": [
+        {
+            "id": 1,
+            "nombre": "Elías González",
+            "foto": "https://drive.google.com/uc?export=view&id=18qYP9X7uudiK7JT2uxCWHmEnCpzvld9m",
+            "cargo": "Programador Jr"
+        },
+        {
+            "id": 2,
+            "nombre": "Andrey Jimenez",
+            "foto": "https://drive.google.com/uc?export=view&id=18ng9p9vPg4FvMG7eyjpOuc9MndwAy-ta",
+            "cargo": "Programador CEO"
+        },
+        {
+            "id": 3,
+            "nombre": "Loana Antillon",
+            "foto": "https://drive.google.com/uc?export=view&id=11ERL9kB-cFuQY1SsJEtGcAhXF3TlMadw",
+            "cargo": "Diseñadora Grafica"
+        },
+        {
+            "id": 6,
+            "nombre": "Ronny Chan Cerdas",
+            "foto": "https://drive.google.com/uc?export=view&id=11DUKM3zxmr0ye6mtF2Y7sypsg2vXk2t_",
+            "cargo": "Deseñador Grafico"
+        }
     ]
 }

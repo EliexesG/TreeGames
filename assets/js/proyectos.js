@@ -13,7 +13,7 @@ async function LlenarDiv() {
 
         $.each(data, function (key, juego) {
             htmlJuegos += `<article class="card p-0 col-md m-2"">
-            <img src="${juego.imagen}" class="card-img-top">
+            <img src="${juego.imagen}" height="250px"  class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title text-center">${juego.nombre}</h5>
                 
