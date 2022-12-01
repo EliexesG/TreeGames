@@ -1,7 +1,7 @@
 
 let div = document.getElementById("proyecto")
 
-function CargarDiv () {
+function CargarDiv() {
 
     let juego = JSON.parse(window.localStorage.getItem('juego'));
 
@@ -27,8 +27,8 @@ function CargarDiv () {
                      `
 
     let divFondo = document.getElementById("fondo");
-    
-    
+
+
     divFondo.style.background = `url("${juego.imagen}") center`
     divFondo.style.borderRadius = '15px';
     divFondo.style.backgroundSize = "200% 200%";

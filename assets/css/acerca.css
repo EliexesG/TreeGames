@@ -1,0 +1,25 @@
+:root {
+    --verde_agua_medio: #155e63;
+    --blanco_1: #f9f8eb;
+    --verde_agua_claro: #1e868d;
+    --verde_agua_oscuro: #0c3639;
+    --blanco_2: #ffffff;
+    --blanco_hueso: #edeac4;
+    --gris_oscuro: #555555;
+}
+
+#contactar, #localizacion {
+    color: var(--verde_agua_claro) !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
+#contactar:hover, #localizacion:hover {
+    font-size: larger !important;
+}
+
+#fotografia {
+    max-height: 50%;
+    max-width: 50%;
+    border-radius: 15px;
+}

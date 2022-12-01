@@ -90,6 +90,10 @@ header .dropdown-menu {
     box-shadow: -1px -8px 5px 0px rgba(0, 0, 0, 0.40);
 }
 
+#pageFooter {
+    position: absolute;
+}
+
 #pageFooter ul li a {
     color: var(--gris_oscuro);
     font-size: 20px;
@@ -121,7 +125,7 @@ main .main {
     background: repeating-linear-gradient(-45deg, var(--verde_agua_medio), var(--verde_agua_medio) 5px, var(--blanco_1) 5px, var(--blanco_1) 25px);
 }
 
-.light { 
+.light {
     color: var(--blanco_1);
 }
 

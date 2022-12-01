@@ -23,7 +23,7 @@ async function LlenarDiv() {
                 
                 <p class="text-center">Descripcion<span class="mt-2"><br>${juego.descripcion}</span></p>
                 <p class="text-center">Fecha de Salida<span class="mt-2"><br>${juego.fechaSalida}</span></p>
-                <button onClick="AbrirPagina(${juego.id})"class="btn mt-3 w-25 juego">Conocer más</button>
+                <button onClick="AbrirPagina(${juego.id})"class="btn mt-3 w-50 juego">Conocer más</button>
                 </div>
             </article>`;
         });
