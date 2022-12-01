@@ -5,14 +5,18 @@ async function LlenarDiv() {
 
     try {
 
-        let response = await fetch("http://localhost:5000/juegos");
+        let response = await fetch("https://eliexesg.github.io/TreeGamesApi/api.json");
 
         let data = await response.json();
+
+        data = data.juegos;
+
+        console.log(data)
 
         var htmlJuegos = "";
 
         $.each(data, function (key, juego) {
-            htmlJuegos += `<article class="card p-0 col-md m-2"">
+            htmlJuegos += `<article class="card p-0 col-md m-2 articulo">
             <img src="${juego.imagen}" height="250px"  class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title text-center">${juego.nombre}</h5>
@@ -37,9 +41,13 @@ async function AbrirPagina(id) {
 
     try {
 
-        let response = await fetch("http://localhost:5000/juegos/" + id);
+        let response = await fetch("https://eliexesg.github.io/TreeGamesApi/api.json");
 
         let data = await response.json();
+
+        data = data.juegos;
+
+        data = data.find(juego => juego.id === id);
 
         window.localStorage.clear();
 
