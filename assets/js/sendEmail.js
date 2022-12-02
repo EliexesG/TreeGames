@@ -25,16 +25,16 @@ $("#formulario").validate({
     }
 });
 
-document.getElementById("contactar").addEventListener('click', async () => {
+document.getElementById("contactar").addEventListener('click', () => {
 
     if ($("#formulario").valid() == false) {
         return;
     }
 
-    await sendEmail();
+    sendEmail();
 });
 
-async function sendEmail() {
+function sendEmail() {
 
     var ok = false;
 
@@ -70,13 +70,13 @@ async function sendEmail() {
     })
 
 
-    await Email.send({
+    Email.send({
         Host: "smtp.elasticemail.com",
         Username: "eliasgabriel6100@gmail.com",
         Password: "C94FBD417510DC4B19F0074F32A2E4DF6336",
-        To: 'eliasgabriel6100@gmail.com',
+        To: 'treegamesservices@gmail.com',
         From: "nodemailerproyecto@gmail.com",
-        Subject: "This is the subject",
+        Subject: "Nuevo Contacto",
         Body: `<table border="1">
                         <thead>
                             <th>Email</th>
@@ -107,14 +107,7 @@ async function sendEmail() {
                     </table>`,
         Port: "2525"
     }).then(
-        message => {
-            if (message == 'OK') {
-                alert("Mensaje Enviado");
-            }
-            else {
-                alert("Error al Enviar Mensaje");
-            }
-        }
+        message => alert(message)
     ).catch(e => {
         console.log(e);
     });
