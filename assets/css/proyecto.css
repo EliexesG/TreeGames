@@ -1,0 +1,16 @@
+:root {
+    --verde_agua_medio: #155e63;
+    --blanco_1: #f9f8eb;
+    --verde_agua_claro: #1e868d;
+    --verde_agua_oscuro: #0c3639;
+    --blanco_2: #ffffff;
+    --blanco_hueso: #edeac4;
+    --gris_oscuro: #555555;
+}
+
+@media only screen and (max-width: 755px) {
+    .articulo {
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+}
